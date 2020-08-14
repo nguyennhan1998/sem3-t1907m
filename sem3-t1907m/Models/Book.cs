@@ -32,6 +32,7 @@ namespace sem3_t1907m.Models
             books.Add(new Book { BookId = 12, Title = "Consequat", Author = "Est Possim", CoverImage = "Assets/12.png" });
             books.Add(new Book { BookId = 13, Title = "Aliquip", Author = "Magna", CoverImage = "Assets/13.png" });
             return books;
+
         }
 
     }

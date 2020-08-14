@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{BCFA4E6B-CB5D-4AB7-8884-16FBE56591B5}</ProjectGuid>
+    <ProjectGuid>{15A30D23-C1A1-4066-A7FB-55CFF9E47935}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>sem3_t1907m</RootNamespace>
-    <AssemblyName>sem3-t1907m</AssemblyName>
+    <RootNamespace>FakeNews</RootNamespace>
+    <AssemblyName>FakeNews</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.18362.0</TargetPlatformVersion>
@@ -116,35 +116,14 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AlignPanel.xaml.cs">
-      <DependentUpon>AlignPanel.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AlignPanel2.xaml.cs">
-      <DependentUpon>AlignPanel2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Alignwithsibling.xaml.cs">
-      <DependentUpon>Alignwithsibling.xaml</DependentUpon>
-    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Grid.xaml.cs">
-      <DependentUpon>Grid.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\Book.cs" />
+    <Compile Include="Model\NewsItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScrollViewer.xaml.cs">
-      <DependentUpon>ScrollViewer.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="StackPanel.xaml.cs">
-      <DependentUpon>StackPanel.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="WrapGrid.xaml.cs">
-      <DependentUpon>WrapGrid.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -152,19 +131,6 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\1.png" />
-    <Content Include="Assets\10.png" />
-    <Content Include="Assets\11.png" />
-    <Content Include="Assets\12.png" />
-    <Content Include="Assets\13.png" />
-    <Content Include="Assets\2.png" />
-    <Content Include="Assets\3.png" />
-    <Content Include="Assets\4.png" />
-    <Content Include="Assets\5.png" />
-    <Content Include="Assets\6.png" />
-    <Content Include="Assets\7.png" />
-    <Content Include="Assets\8.png" />
-    <Content Include="Assets\9.png" />
     <Content Include="Assets\Financial.png" />
     <Content Include="Assets\Financial2.png" />
     <Content Include="Assets\Financial3.png" />
@@ -190,48 +156,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="AlignPanel.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="AlignPanel2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Alignwithsibling.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Grid.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ScrollViewer.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="StackPanel.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="WrapGrid.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.10</Version>
     </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Services.NuGet.CredentialProvider">
-      <Version>0.37.0</Version>
-    </PackageReference>
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

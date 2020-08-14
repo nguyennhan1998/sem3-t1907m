@@ -18,20 +18,20 @@ namespace sem3_t1907m.Models
         public static List<Book> GetBooks()
         {
             var books = new List<Book>();
-            books.Add(new Book { BookId = 1, Title = "Vulpate", Author = "Futurum", CoverImage = "Asset/1.png" });
-            books.Add(new Book { BookId = 2, Title = "Mazim", Author = "Sequiter Que", CoverImage = "Asset/2.png" });
-            books.Add(new Book { BookId = 3, Title = "Elip", Author = "Tempor", CoverImage = "Asset/3.png" });
-            books.Add(new Book { BookId = 4, Title = "Etiam", Author = "Option", CoverImage = "Asset/4.png" });
-            books.Add(new Book { BookId = 5, Title = "Fegait Eros Libex", Author = "Accumsan", CoverImage = "Asset/5.png" });
-            books.Add(new Book { BookId = 6, Title = "Nonummy Erat", Author = "Legunt Xaepius", CoverImage = "Asset/6.png" });
-            books.Add(new Book { BookId = 7, Title = "Per Modo", Author = "Vero Tation", CoverImage = "Asset/7.png" });
-            books.Add(new Book { BookId = 8, Title = "Susciptit Ad", Author = "Jack Tibbles", CoverImage = "Asset/8.png" });
-            books.Add(new Book { BookId = 9, Title = "Decima", Author = "Tuffy Tibbles", CoverImage = "Asset/9.png" });
-            books.Add(new Book { BookId = 10, Title = "Errat", Author = "Volupat", CoverImage = "Asset/10.png" });
-            books.Add(new Book { BookId = 11, Title = "Cosequat", Author = "Est Possim", CoverImage = "Asset/11.png" });
-            books.Add(new Book { BookId = 12, Title = "Aliquip", Author = "Magna", CoverImage = "Asset/12.png" });
-            books.Add(new Book { BookId = 13, Title = "Nonummy", Author = "Tempor", CoverImage = "Asset/13.png" });
-              return books;
+            books.Add(new Book { BookId = 1, Title = "Vulpale", Author = "Futurum", CoverImage = "Assets/1.png" });
+            books.Add(new Book { BookId = 2, Title = "Mazim", Author = "Sequiter Que", CoverImage = "Assets/2.png" });
+            books.Add(new Book { BookId = 3, Title = "Elit", Author = "Tempor", CoverImage = "Assets/3.png" });
+            books.Add(new Book { BookId = 4, Title = "Etiam", Author = "Option", CoverImage = "Assets/4.png" });
+            books.Add(new Book { BookId = 5, Title = "Feugait Eros Libex", Author = "Accumsan", CoverImage = "Assets/5.png" });
+            books.Add(new Book { BookId = 6, Title = "Nonummy Erat", Author = "Legunt Xaepius", CoverImage = "Assets/6.png" });
+            books.Add(new Book { BookId = 7, Title = "Nostrud", Author = "Eleifend", CoverImage = "Assets/7.png" });
+            books.Add(new Book { BookId = 8, Title = "Per Modo", Author = "Vero Tation", CoverImage = "Assets/8.png" });
+            books.Add(new Book { BookId = 9, Title = "Suscipit Ad", Author = "Jack Tibbles", CoverImage = "Assets/9.png" });
+            books.Add(new Book { BookId = 10, Title = "Decima", Author = "Tuffy Tibbles", CoverImage = "Assets/10.png" });
+            books.Add(new Book { BookId = 11, Title = "Erat", Author = "Volupat", CoverImage = "Assets/11.png" });
+            books.Add(new Book { BookId = 12, Title = "Consequat", Author = "Est Possim", CoverImage = "Assets/12.png" });
+            books.Add(new Book { BookId = 13, Title = "Aliquip", Author = "Magna", CoverImage = "Assets/13.png" });
+            return books;
         }
 
     }

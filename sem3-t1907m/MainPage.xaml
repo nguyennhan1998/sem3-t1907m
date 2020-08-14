@@ -28,8 +28,7 @@
         <GridView ItemsSource="{x:Bind Books}"
                   IsItemClickEnabled="True"
                   ItemClick="GridView_ItemClick"
-                  ItemTemplate="{StaticResource BookDataTemplate}">
-        </GridView>
+                  ItemTemplate="{StaticResource BookDataTemplate}"/>
         <TextBlock Grid.Row="1" Name="ResultTextBlock"
                    FontSize="24" Foreground="Red" FontWeight="Bold" Margin="0,20,0,0"/>
     </Grid>

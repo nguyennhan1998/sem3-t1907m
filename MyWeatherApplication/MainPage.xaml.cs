@@ -38,5 +38,10 @@ namespace MyWeatherApplication
             ResultWeatherTextBlock.Text = myWeather.name + "-" + ((int)myWeather.main.temp).ToString();
 
         }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

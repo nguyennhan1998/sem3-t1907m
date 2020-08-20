@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{62BFD748-544F-40C8-AD0E-F40B7D0C40AE}</ProjectGuid>
+    <ProjectGuid>{D48E08DE-9367-43B6-A462-2EF62F285B54}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyWeatherApplication</RootNamespace>
-    <AssemblyName>MyWeatherApplication</AssemblyName>
+    <RootNamespace>WeatherAppDemo</RootNamespace>
+    <AssemblyName>WeatherAppDemo</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.18362.0</TargetPlatformVersion>
@@ -122,8 +122,7 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model\GetWeatherData.cs" />
-    <Compile Include="Model\LocationData.cs" />
+    <Compile Include="Model\APIManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +131,24 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\01d.png" />
+    <Content Include="Assets\01n.png" />
+    <Content Include="Assets\02d.png" />
+    <Content Include="Assets\02n.png" />
+    <Content Include="Assets\03d.png" />
+    <Content Include="Assets\03n.png" />
+    <Content Include="Assets\04d.png" />
+    <Content Include="Assets\04n.png" />
+    <Content Include="Assets\09d.png" />
+    <Content Include="Assets\09n.png" />
+    <Content Include="Assets\10d.png" />
+    <Content Include="Assets\10n.png" />
+    <Content Include="Assets\11d.png" />
+    <Content Include="Assets\11n.png" />
+    <Content Include="Assets\13d.png" />
+    <Content Include="Assets\13n.png" />
+    <Content Include="Assets\50d.png" />
+    <Content Include="Assets\50n.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

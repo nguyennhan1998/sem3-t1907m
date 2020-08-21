@@ -9,9 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace WeatherAppDemo.Model
+namespace WeatherAppDemo1
 {
-    public class APIManager
+    class APIManager
     {
         public async static Task<RootObject> GetWeather(double lat, double lon)
         {
@@ -98,4 +98,5 @@ namespace WeatherAppDemo.Model
             public int cod { get; set; }
         }
     }
+
 }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
-using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace WeatherAppDemo1
 {
-    class APIManager
+    public class APIManager
     {
         public async static Task<RootObject> GetWeather(double lat, double lon)
         {
@@ -28,16 +27,16 @@ namespace WeatherAppDemo1
             return data;
         }
 
-        [DataContract]
+
 
         // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
         public class Coord
         {
             public double lon { get; set; }
-            public int lat { get; set; }
+            public double lat { get; set; }
         }
 
-        [DataContract]
+
         public class Weather
         {
             public int id { get; set; }
@@ -46,10 +45,9 @@ namespace WeatherAppDemo1
             public string icon { get; set; }
         }
 
-        [DataContract]
         public class Main
         {
-            public int temp { get; set; }
+            public double temp { get; set; }
             public double feels_like { get; set; }
             public int temp_min { get; set; }
             public int temp_max { get; set; }
@@ -57,20 +55,18 @@ namespace WeatherAppDemo1
             public int humidity { get; set; }
         }
 
-        [DataContract]
         public class Wind
         {
             public double speed { get; set; }
             public int deg { get; set; }
         }
 
-        [DataContract]
         public class Clouds
         {
             public int all { get; set; }
         }
 
-        [DataContract]
+
         public class Sys
         {
             public int type { get; set; }
@@ -80,7 +76,7 @@ namespace WeatherAppDemo1
             public int sunset { get; set; }
         }
 
-        [DataContract]
+
         public class RootObject
         {
             public Coord coord { get; set; }
@@ -98,5 +94,4 @@ namespace WeatherAppDemo1
             public int cod { get; set; }
         }
     }
-
 }

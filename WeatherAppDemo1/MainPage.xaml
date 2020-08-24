@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     Loaded="Page_Loaded">
 
-    <StackPanel Background="Brown">
+    <StackPanel Background="Pink">
         <StackPanel VerticalAlignment="Center">
             <Image Name="ResultImage" Width="200" Height="200" HorizontalAlignment="Center"/>
             <TextBlock Name="TempTextBlock" FontSize="53" Foreground="White" HorizontalAlignment="Center"/>

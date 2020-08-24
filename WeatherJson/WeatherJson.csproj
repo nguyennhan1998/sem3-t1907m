@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{455D2521-115C-4E70-A93B-28EE064BDD13}</ProjectGuid>
+    <ProjectGuid>{BEB32D80-DB82-43A3-B17A-716233116355}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WeatherAppDemo1</RootNamespace>
-    <AssemblyName>WeatherAppDemo1</AssemblyName>
+    <RootNamespace>WeatherJson</RootNamespace>
+    <AssemblyName>WeatherJson</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.18362.0</TargetPlatformVersion>
@@ -116,14 +116,14 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="APIManager.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LocationData.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\WeatherEachDay.cs" />
+    <Compile Include="Models\WeatherJSON.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -132,24 +132,6 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Weather\01d.png" />
-    <Content Include="Assets\Weather\01n.png" />
-    <Content Include="Assets\Weather\02d.png" />
-    <Content Include="Assets\Weather\02n.png" />
-    <Content Include="Assets\Weather\03d.png" />
-    <Content Include="Assets\Weather\03n.png" />
-    <Content Include="Assets\Weather\04d.png" />
-    <Content Include="Assets\Weather\04n.png" />
-    <Content Include="Assets\Weather\09d.png" />
-    <Content Include="Assets\Weather\09n.png" />
-    <Content Include="Assets\Weather\10d.png" />
-    <Content Include="Assets\Weather\10n.png" />
-    <Content Include="Assets\Weather\11d.png" />
-    <Content Include="Assets\Weather\11n.png" />
-    <Content Include="Assets\Weather\13d.png" />
-    <Content Include="Assets\Weather\13n.png" />
-    <Content Include="Assets\Weather\50d.png" />
-    <Content Include="Assets\Weather\50n.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -170,9 +152,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Google.Apis.YouTube.v3">
-      <Version>1.47.0.2008</Version>
-    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.10</Version>
     </PackageReference>

@@ -17,14 +17,27 @@ using Windows.UI.Xaml.Navigation;
 
 namespace SQLite
 {
+   
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        string path;
+        SQLite.Net.SQLiteconnection conn;
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void Retrieve_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

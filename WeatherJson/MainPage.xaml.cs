@@ -18,7 +18,7 @@ using Windows.UI.Xaml.Navigation;
 using WeatherJson.Models;
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace ACC_Weather
+namespace WeatherJson
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -68,6 +68,7 @@ namespace ACC_Weather
         private async void InitEachDaysJSON()
         {
             var urlFiveDay = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/353412?apikey=93Qg780lHwYM4SO58n7DFPLqHg4oKADn&language=vi-vn&metric=true";
+            /*   var obj = await WeatherEachDay.GetWeatherEach(urlFiveDay) as WeatherEachDay;*//**/
             var obj = await WeatherEachDay.GetWeatherEach(urlFiveDay) as WeatherEachDay;
             obj.DailyForecasts.ForEach(it =>
             {

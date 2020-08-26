@@ -66,7 +66,7 @@ namespace WeatherJson.Models
         public string Link { get; set; }
 
     }
-    class WeatherEachDay
+    public class WeatherEachDay
     {
         public HeadLine HeadLine { get; set; }
         public List<DailyForecast> DailyForecasts { get; set; }
